@@ -78,3 +78,8 @@ min-height: 70px;
 .aboutus {
   height: 3000px;
 }
+/* For Questions.html */
+.container {
+  display: flex;
+  justify-content: center;
+}
