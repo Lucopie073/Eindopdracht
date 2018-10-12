@@ -1,4 +1,7 @@
 /* For the standard font */
+label {
+  color: #ffffff;
+}
 
 html {
   font-family: 'Montserrat', sans-serif;
@@ -11,26 +14,30 @@ html, body {
 }
 /* For the navigation bar */
 nav {
-  border-bottom: 2px solid #EAEAEB;
+  border-bottom: 1px solid #474747;
   text-align: center;
-  height: 70px;
-  line-height: 70px;
+  height: 44px;
+  line-height: 44px;
+  background-color: #474747;
+  font-size: 15px;
 }
 .menu {
   margin: 0 20px;
+  background-color: #474747;
 }
+
 .menu a {
   clear: left;
   text-decoration: none;
-  color: gray;
+  color: white;
   margin: 0 20px;
-  line-height: 70px;
-  background-color: white;
+  line-height: 44px;
+  background-color: #474747;
 }
 label {
-  margin: 0 0 0 40px;
+  margin: 0 0 0 0px;
   font-size: 24px;
-  line-height: 70px;
+  line-height: 44px;
   display: none;
   width: 26px;
   float: left;
@@ -38,6 +45,7 @@ label {
 #toggle {
   display: none;
 }
+/* For mobile Devices */
 @media only screen and (max-width: 767px) {
   label {
     display: block;
@@ -46,30 +54,36 @@ label {
   nav {
     text-align: left;
     height: auto;
-    min-height: 70px;
-    line-height: 70px;
+    min-height: 44px;
+    line-height: 44px;
   }
   .menu {
     text-align: center;
     width: 100%;
     display: none;
-    background-color: white;
+    background-color: #474747;
  }
   .menu a {
     display: block;
-    border-bottom: 2px solid #EAEAEB;
+    border-bottom: 1px solid #EAEAEB;
     margin: 0;
   }
   #toggle:checked + .menu {
     display: block;
+    margin-left: 2px;
+  }
+  label {
+    margin-left: 20px;
   }
 }
 
 /* For home.html */
-.Home H1 {
-  background-color: #00ff00;
-  text-align: center;
+.ContainerHome {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
+
 
 /* For supreme.html */
 .supreme {
@@ -79,7 +93,7 @@ min-height: 70px;
   height: 3000px;
 }
 /* For Questions.html */
-.container {
+.containerQuestions {
   display: flex;
   justify-content: center;
 }
