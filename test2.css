@@ -75,6 +75,9 @@ label {
   label {
     margin-left: 20px;
   }
+  .ContainerHome {
+    flex-direction: column;
+  }
 }
 
 /* For home.html */
@@ -83,8 +86,21 @@ label {
   align-items: flex-start;
   justify-content: center;
 }
+.HomeText1 {
+  order: 1;
+  background-color: #303030;
+  color: #ffffff;
 
+}
+.HomeText2 {
+  order: 2;
+  background-color: #474747;
 
+}
+.HomeText3 {
+  order: 3;
+  background-color: #909090;
+}
 /* For supreme.html */
 .supreme {
 min-height: 70px;
