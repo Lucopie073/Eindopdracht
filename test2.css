@@ -142,7 +142,7 @@ body {
 
 @keyframes text {
   0%{
-    color: white;
+    color: black;
     margin-bottom: -40px;
   }
   30%{
@@ -156,8 +156,10 @@ body {
 
 }
 
+
 /* For Questions.html */
 .containerQuestions {
+  color: white;
   display: flex;
   justify-content: center;
 }
