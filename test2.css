@@ -77,11 +77,16 @@ label {
   #toggle:checked + .menu {
     display: block;
     margin-left: 2px;
+    background-color: #1c1c1c;
   }
   label {
     margin-left: 20px;
   }
   .ContainerHome {
+    flex-direction: column;
+    width: auto;
+  }
+  .ContainerHome2 {
     flex-direction: column;
   }
 }
@@ -89,26 +94,38 @@ label {
 /* For home.html */
 .ContainerHome {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  background-color: #474747;
+  background-color: black;
 }
 .HomeText1 {
   order: 1;
   background-color: #303030;
   color: #ffffff;
+  height: auto;
+  margin: 20px;
 
 }
 .HomeText2 {
   order: 2;
   background-color: #909090;
+  height: auto;
+  margin: 20px;
 
 }
 .HomeText3 {
   order: 3;
   background-color: #474747;
+  height: auto;
+  margin: 20px;
 }
 
+.ContainerHome2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
 
 /* For supreme.html */
 .SupremeContainer {
