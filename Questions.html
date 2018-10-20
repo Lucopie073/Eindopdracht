@@ -2,7 +2,7 @@
 
 <head>
   <title>Questions</title>
-  <link rel="stylesheet" type="text/css" href="test2.css">
+  <link rel="stylesheet" type="text/css" href="test3.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -22,21 +22,36 @@
   </div>
 </nav>
   <div class="containerQuestions">
-  <div class="Formulier">
-    <form action="">
-      First Name: <br>
-      <input type="text" name="firstname"><br><br>
-      Last name: <br>
-      <input type="text" name="lastname"><br><br>
-      Gender: <br>
-      <input type="radio" name="gender" value="male"> Male<br>
-      <input type="radio" name="gender" value="female"> Female<br>
-      <input type="radio" name="gender" value="other"> Other<br><br>
-      Address: <br>
-      <input type="text" name="address"><br><br>
-      <input type="submit" value="submit">
-    </form>
-  </div>
+    <div class="wrapper">
+      <div class="bedrijfsinformatie">
+        <h3>Questions</h3>
+      </div>
+      <div class="contact">
+        <h3>Contact us</h3>
+        <form>
+          <p>
+            <label>First Name</label>
+            <input type="text" name="firstname">
+          </p>
+          <p>
+            <label>Last Name</label>
+            <input type="text" name="lastname">
+          </p>
+          <p>
+            <label>Email address</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone">
+          </p>
+          <p class="message">
+            <label>Message</label>
+            <textarea name="message" rows="5"></textarea>
+          </p>
+        </form>
+      </div>
+    </div>
   </div>
 </body>
 </html>
