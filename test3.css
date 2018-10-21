@@ -1,4 +1,7 @@
 /* For the standard font */
+label {
+  color: #ffffff;
+}
 
 * {
   padding: 0;
@@ -14,8 +17,21 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+  background-color: black;
+  color: white;
 }
 /* For the navigation bar */
+.navigatie {
+  transition: 0.3s ease;
+  border-top: 2px solid #1c1c1c;
+  border-bottom: 2px solid #1c1c1c;
+}
+
+.navigatie:hover {
+  border-bottom: 2px solid white;
+  padding: 6px 0;
+}
+
 nav {
   border-bottom: 1px solid #1c1c1c;
   text-align: center;
@@ -36,6 +52,7 @@ nav {
   margin: 0 20px;
   line-height: 44px;
   background-color: #1c1c1c;
+
 }
 label {
   margin: 0 0 0 0px;
@@ -65,7 +82,7 @@ label {
     width: 100%;
     display: none;
     background-color: #474747;
- }
+  }
   .menu a {
     display: block;
     border-bottom: 1px solid #1c1c1c;
@@ -74,14 +91,23 @@ label {
   #toggle:checked + .menu {
     display: block;
     margin-left: 2px;
+    background-color: #1c1c1c;
   }
   label {
     margin-left: 20px;
   }
 }
 
-/* voor responsive formulier */
+form {
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+}
 
-.containerQuestions {
-  background-color: green;
+td {
+  padding: 2px;
+}
+
+textarea {
+  height: 200px;
 }

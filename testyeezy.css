@@ -1,0 +1,251 @@
+label {
+  color: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 20px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/* For the navigation bar */
+.navigatie {
+  transition: 0.3s ease;
+  border-top: 2px solid #1c1c1c;
+  border-bottom: 2px solid #1c1c1c;
+}
+
+.navigatie:hover {
+  border-bottom: 2px solid white;
+  padding: 6px 0;
+}
+
+nav {
+  border-bottom: 1px solid #1c1c1c;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  background-color: #1c1c1c;
+  font-size: 15px;
+}
+.menu {
+  margin: 0 20px;
+  background-color: #1c1c1c;
+}
+
+.menu a {
+  clear: left;
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  line-height: 44px;
+  background-color: #1c1c1c;
+}
+label {
+  margin: 0 0 0 0px;
+  font-size: 24px;
+  line-height: 44px;
+  display: none;
+  width: 26px;
+  float: left;
+}
+#toggle {
+  display: none;
+}
+/* For mobile Devices */
+@media only screen and (max-width: 767px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  nav {
+    text-align: left;
+    height: auto;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: #474747;
+ }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #1c1c1c;
+    margin: 0;
+  }
+  #toggle:checked + .menu {
+    display: block;
+    margin-left: 2px;
+  }
+  label {
+    margin-left: 20px;
+  }
+  .ContainerHome {
+    flex-direction: column;
+  }
+}
+/*dit is voor de header */
+.hero-image {
+  background-image: url("http://www.danieledewinteruk.co.uk/includes/templates/danieledewinteruk/images/adidas-banner.jpg");
+  background-color: #cccccc;
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #000000;
+}
+
+
+
+
+/* Fake image */
+.fakeimg {
+  background-image: url("https://static.highsnobiety.com/wp-content/uploads/2018/09/20173814/adidas-yeezy-boost-350-v2-cream-white-foot-03-480x320.jpg");
+    background-color: #aaa;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+@media (max-width: 300px) {
+  body {
+    background-color: #ffffff;
+    background-image: image-url("http://placekitten.com/g/200/300");
+  }
+}
+@media (min-width: 301px) and (max-width: 600px) {
+  body {
+    background-color:#ffffff;
+    background-image: image-url("http://placekitten.com/g/400/600");
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  body {
+    background-color:#424142;
+    background-image: image-url("http://placekitten.com/g/500/768");
+  }
+}
+@media (min-width: 769px) {
+  body {
+    background-color: #000000;
+    background-image: image-url("http://placekitten.com/g/800/1048");
+  }
+}

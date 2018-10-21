@@ -1,0 +1,220 @@
+/* For the standard font */
+label {
+  color: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 20px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/* For the navigation bar */
+.navigatie {
+  transition: 0.3s ease;
+  border-top: 2px solid #1c1c1c;
+  border-bottom: 2px solid #1c1c1c;
+}
+
+.navigatie:hover {
+  border-bottom: 2px solid white;
+  padding: 6px 0;
+}
+
+nav {
+  border-bottom: 1px solid #1c1c1c;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  background-color: #1c1c1c;
+  font-size: 15px;
+}
+.menu {
+  margin: 0 20px;
+  background-color: #1c1c1c;
+}
+
+.menu a {
+  clear: left;
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  line-height: 44px;
+  background-color: #1c1c1c;
+}
+label {
+  margin: 0 0 0 0px;
+  font-size: 24px;
+  line-height: 44px;
+  display: none;
+  width: 26px;
+  float: left;
+}
+#toggle {
+  display: none;
+}
+/* For mobile Devices */
+@media only screen and (max-width: 767px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  nav {
+    text-align: left;
+    height: auto;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: #474747;
+ }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #1c1c1c;
+    margin: 0;
+  }
+  #toggle:checked + .menu {
+    display: block;
+    margin-left: 2px;
+  }
+  label {
+    margin-left: 20px;
+  }
+  .ContainerHome {
+    flex-direction: column;
+  }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/*dit is voor de header */
+.hero-image {
+  background-image: url("https://tsuji.com.au/wp-content/uploads/2018/03/bape-camo-bearbrick-banner.png");
+  background-color: #cccccc;
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+@media (max-width: 300px) {
+  body {
+    background-color: #87CEEB;
+
+  }
+}
+@media (min-width: 301px) and (max-width: 600px) {
+  body {
+    background-color:#87CEEB;
+
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  body {
+    background-color:	#1E90FF;
+
+  }
+}
+@media (min-width: 769px) {
+  body {
+    background-color: #ffffff ;
+
+  }
+}

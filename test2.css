@@ -184,11 +184,3 @@ body {
   }
 
 }
-
-
-/* For Questions.html */
-.containerQuestions {
-  color: white;
-  display: flex;
-  justify-content: center;
-}
